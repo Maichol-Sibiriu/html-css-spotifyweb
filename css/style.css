@@ -23,9 +23,10 @@
   flex-basis: 200px;
   background-color: grey;
 }
-
+.nav-up{
+  flex-grow: 1
+}
 .account{
-  margin: auto 0 0;
   height: 50px;
   background-color: red;
 }

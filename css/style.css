@@ -1,0 +1,34 @@
+/* general style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.spotify{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+
+.nav{
+  padding: 0px 20px;
+  background-color: grey;
+  flex-basis: 200px;
+}
+
+.choose{
+  background-color: black;
+  flex-grow: 1;
+}
+
+footer{
+  padding: 40px 0px;
+  background-color: darkgrey;
+}

@@ -18,9 +18,16 @@
 }
 
 .nav{
-  padding: 0px 20px;
-  background-color: grey;
+  flex-direction: column;
+  display: flex;
   flex-basis: 200px;
+  background-color: grey;
+}
+
+.account{
+  margin: auto 0 0;
+  height: 50px;
+  background-color: red;
 }
 
 .choose{
@@ -28,7 +35,81 @@
   flex-grow: 1;
 }
 
+.upgrade{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: yellow;
+  justify-content: flex-end;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  align-self: center;
+}
+
+.main-menu{
+  display: flex;
+  width: 95%;
+  height: 60px;
+  background-color: green;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.tracks{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tracks2{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tracks3{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tracks2 .box{
+  margin-right: 100px;
+}
+
+.tracks3 .box{
+  margin-right: 100px;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
 footer{
+  display: flex;
   padding: 40px 0px;
   background-color: darkgrey;
+  justify-content: space-between;
+}
+
+.ico{
+  width: 200px;
+  height: 40px;
+  background-color: white;
+}
+
+.play{
+  width: 200px;
+  height: 40px;
+  background-color: white;
+}
+
+.setting{
+  width: 200px;
+  height: 40px;
+  background-color: white;
 }

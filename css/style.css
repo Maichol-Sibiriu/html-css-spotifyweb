@@ -27,6 +27,7 @@ body{
 
 .grid{
   flex-grow: 1;
+  position: relative;
 }
 
 .upgrade{
@@ -35,6 +36,10 @@ body{
   width: 100%;
   padding: 15px 0px;
   background-color: #080b11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .list-menu-grid{
@@ -137,6 +142,7 @@ a{
   border-radius: 50%;
 }
 
+/* grid */
 /* upgrade */
 .upgrade button{
   margin-right: 10px;
@@ -148,7 +154,16 @@ a{
   text-transform: uppercase;
 }
 
-/* grid */
+/* list menu grid */
+/* list menu */
+.list-menu-grid{
+  padding: 56px 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
 .list-menu ul{
   display: flex;
   justify-content: center;
@@ -158,6 +173,21 @@ a{
 
 .list-menu ul li{
   padding: 0px 15px;
+}
+
+/* list album */
+.grid-album ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-album ul li{
+  width: calc(100% / 6);
+  padding-right: 15px;
+}
+
+.grid-album ul li img{
+  width: 100%;
 }
 
 /* footer */
@@ -184,12 +214,6 @@ a{
   margin-left: 20px;
   margin-right: 10px;
 }
-/*
-.choose{
-  background-color: black;
-  flex-grow: 1;
-  position: relative;
-} */
 
 /* .upgrade{
   display: flex;

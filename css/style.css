@@ -7,11 +7,12 @@
 
 /* layout SPOTIFY */
 .spotify{
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   color: white;
   font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
 }
 
 .content{
@@ -20,6 +21,16 @@
   flex-basis: 300px;
 }
 
+.upgrade{
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #080b11;
+}
+
+footer{
+  background-color: #272727;
+  padding: 20px 10px;
+}
 /* utility */
 ul{
   list-style: none;
@@ -37,10 +48,7 @@ a{
   background-color: #000000;
   flex-basis: 200px;
   padding: 20px 20px 0px;
-}
-
-.navbar{
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
 /* logo */
@@ -85,29 +93,57 @@ a{
 .account img{
   width: 15%;
   vertical-align: middle;
+  margin-right: 10px;
 }
 
-.account:first-child {
-  border: 1px solid red;
+/* installa app */
+.account a:first-child{
+  border-bottom: 2px solid grey;
+  padding-bottom: 10px;
 }
 
-.profile{
-  content: "";
-  display: block;
+.fa-arrow-alt-circle-down{
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.account a:last-child{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* profile */
+.account a img{
   width: 15%;
-  height: 100px;
   background-color: grey;
+  border-radius: 50%;
 }
-.selection::after{
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #808080;
+
+
+/* footer */
+/* left footer */
+.left-footer{
+  display: flex;
 }
-/* .account{
-  height: 50px;
-  background-color: red;
-} */
+
+.left-footer img{
+  width: 3%;
+}
+
+.text-footer{
+  margin: auto 10px;
+  font-size: 11px;
+}
+
+.ico-footer-left{
+  display: flex;
+  align-items: center;
+}
+
+.fa-heart{
+  margin-left: 20px;
+  margin-right: 10px;
+}
 /*
 .choose{
   background-color: black;

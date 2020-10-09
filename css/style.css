@@ -75,6 +75,35 @@ a{
   vertical-align: middle;
   padding-right: 10px;
 }
+
+/* account */
+.account{
+  display: flex;
+  flex-direction: column;
+}
+
+.account img{
+  width: 15%;
+  vertical-align: middle;
+}
+
+.account:first-child {
+  border: 1px solid red;
+}
+
+.profile{
+  content: "";
+  display: block;
+  width: 15%;
+  height: 100px;
+  background-color: grey;
+}
+.selection::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #808080;
+}
 /* .account{
   height: 50px;
   background-color: red;

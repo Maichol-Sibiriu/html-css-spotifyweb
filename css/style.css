@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
+/* layout SPOTIFY */
 .spotify{
   height: 100vh;
   display: flex;
   flex-direction: column;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .content{
@@ -17,29 +20,73 @@
   flex-basis: 300px;
 }
 
-.nav{
-  flex-direction: column;
+/* utility */
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* vertical navbar */
+.menu-left{
   display: flex;
+  flex-direction: column;
+  background-color: #000000;
   flex-basis: 200px;
-  background-color: grey;
+  padding: 20px 20px 0px;
 }
 
-.nav-up{
-  flex-grow: 1
+.navbar{
+  flex-grow: 1;
 }
 
-.account{
+/* logo */
+.navbar img{
+  width: 80%;
+}
+
+/* lista navbar */
+.list-navbar{
+  padding: 20px 0px;
+}
+
+.list-navbar img{
+  width: 15%;
+}
+
+.list-navbar a img{
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+/* playlist */
+.playlist li{
+  margin-top: 15px;
+}
+
+.navbar h3{
+  text-transform: uppercase;
+}
+
+.fa-plus-square{
+  vertical-align: middle;
+  padding-right: 10px;
+}
+/* .account{
   height: 50px;
   background-color: red;
-}
-
+} */
+/*
 .choose{
   background-color: black;
   flex-grow: 1;
   position: relative;
-}
+} */
 
-.upgrade{
+/* .upgrade{
   display: flex;
   width: 100%;
   height: 60px;
@@ -49,9 +96,9 @@
   z-index: 1;
   top: 0;
   left: 0;
-}
+} */
 
-.main-choose{
+/* .main-choose{
   width: 100%;
   height: 100%;
   padding: 60px 5px;
@@ -60,75 +107,75 @@
   top: 0;
   left: 0;
   overflow-y: auto;
-}
+} */
 
-button{
+/* button{
   width: 100px;
   height: 30px;
   align-self: center;
-}
+} */
 
-.main-menu{
+/* .main-menu{
   display: flex;
   width: 95%;
   height: 60px;
   background-color: green;
   margin: 0 auto;
   justify-content: center;
-}
-
+} */
+/*
 .tracks{
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-}
+} */
 
-.tracks2{
+/* .tracks2{
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-}
+} */
 
-.tracks3{
+/* .tracks3{
   display: flex;
   margin-bottom: 20px;
-}
+} */
 
-.tracks2 .box{
+/* .tracks2 .box{
   margin-right: 100px;
-}
+} */
 
-.tracks3 .box{
+/* .tracks3 .box{
   margin-right: 100px;
-}
+} */
 
-.box{
+/* .box{
   width: 100px;
   height: 100px;
   background-color: pink;
-}
+} */
 
-footer{
+/* footer{
   display: flex;
   padding: 40px 0px;
   background-color: darkgrey;
   justify-content: space-between;
-}
+} */
 
-.ico{
+/* .ico{
   width: 200px;
   height: 40px;
   background-color: white;
-}
+} */
 
-.play{
+/* .play{
   width: 200px;
   height: 40px;
   background-color: white;
-}
+} */
 
-.setting{
+/* .setting{
   width: 200px;
   height: 40px;
   background-color: white;
-}
+} */

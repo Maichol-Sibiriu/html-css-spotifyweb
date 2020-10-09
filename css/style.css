@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 
+body{
+  height: 100vh;
+}
+
 /* layout SPOTIFY */
 .spotify{
-  height: 130vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   color: white;
@@ -21,13 +25,27 @@
   flex-basis: 300px;
 }
 
+.grid{
+  flex-grow: 1;
+}
+
 .upgrade{
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
-  padding: 20px 0px;
+  padding: 15px 0px;
   background-color: #080b11;
 }
 
+.list-menu-grid{
+  height: 100%;
+  background-color: #141921;
+  padding: 0px 10px;
+}
+
 footer{
+  height: 80px;
+  display: flex;
   background-color: #272727;
   padding: 20px 10px;
 }
@@ -119,6 +137,28 @@ a{
   border-radius: 50%;
 }
 
+/* upgrade */
+.upgrade button{
+  margin-right: 10px;
+  padding: 5px 35px;
+  border-radius: 40px;
+  font-size: 10px;
+  color: white;
+  background-color: #080b11;
+  text-transform: uppercase;
+}
+
+/* grid */
+.list-menu ul{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  text-transform: uppercase;
+}
+
+.list-menu ul li{
+  padding: 0px 15px;
+}
 
 /* footer */
 /* left footer */
@@ -127,12 +167,12 @@ a{
 }
 
 .left-footer img{
-  width: 3%;
+  width: 8%;
 }
 
 .text-footer{
   margin: auto 10px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .ico-footer-left{

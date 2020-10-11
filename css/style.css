@@ -16,7 +16,7 @@ body{
   flex-direction: column;
   color: white;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 13px;
+  font-size: 9px;
 }
 
 .content{
@@ -35,25 +35,19 @@ body{
   justify-content: flex-end;
   width: 100%;
   padding: 15px 0px;
-  background-color: #080b11;
+  background-color: rgba(0,0,0, .4);
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-.list-menu-grid{
-  height: 100%;
-  background-color: #141921;
-  padding: 0px 10px;
-}
-
 footer{
-  height: 80px;
   display: flex;
   background-color: #272727;
-  padding: 20px 10px;
+  padding: 15px 10px;
 }
+
 /* utility */
 ul{
   list-style: none;
@@ -69,37 +63,40 @@ a{
   display: flex;
   flex-direction: column;
   background-color: #000000;
-  flex-basis: 200px;
-  padding: 20px 20px 0px;
+  flex-basis: 150px;
+  padding: 10px;
   justify-content: space-between;
 }
 
 /* logo */
 .navbar img{
-  width: 80%;
+  width: 85%;
 }
 
 /* lista navbar */
 .list-navbar{
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
-.list-navbar img{
-  width: 15%;
+.list-navbar a img,
+.list-navbar a span{
+  vertical-align: middle;
 }
 
 .list-navbar a img{
+  width: 15%;
   margin-right: 5px;
   margin-top: 5px;
 }
 
 /* playlist */
 .playlist li{
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .navbar h3{
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .fa-plus-square{
@@ -131,8 +128,7 @@ a{
 }
 
 .account a:last-child{
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* profile */
@@ -157,11 +153,17 @@ a{
 /* list menu grid */
 /* list menu */
 .list-menu-grid{
-  padding: 56px 0px;
+  height: 100%;
+  background-color: #141921;
+  padding: 0px 10px;
   position: absolute;
   top: 0;
   left: 0;
   overflow-y: auto;
+}
+
+.list-menu{
+  padding-top: 56px;
 }
 
 .list-menu ul{
@@ -186,10 +188,30 @@ a{
   padding-right: 15px;
 }
 
-.grid-album ul li img{
-  width: 100%;
+.grid-album ul li a{
+  text-align: center;
 }
 
+.grid-album ul li img{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.grid-album p{
+  margin: 10px 0px;
+}
+
+.grid-album{
+  padding-bottom: 10px;
+}
+
+.grid-album h1{
+  margin-top: 20px;
+}
+
+.popular li img{
+  border-radius: 50%;
+}
 /* footer */
 /* left footer */
 .left-footer{
@@ -202,7 +224,6 @@ a{
 
 .text-footer{
   margin: auto 10px;
-  font-size: 12px;
 }
 
 .ico-footer-left{
@@ -214,97 +235,3 @@ a{
   margin-left: 20px;
   margin-right: 10px;
 }
-
-/* .upgrade{
-  display: flex;
-  width: 100%;
-  height: 60px;
-  background-color: yellow;
-  justify-content: flex-end;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-} */
-
-/* .main-choose{
-  width: 100%;
-  height: 100%;
-  padding: 60px 5px;
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-} */
-
-/* button{
-  width: 100px;
-  height: 30px;
-  align-self: center;
-} */
-
-/* .main-menu{
-  display: flex;
-  width: 95%;
-  height: 60px;
-  background-color: green;
-  margin: 0 auto;
-  justify-content: center;
-} */
-/*
-.tracks{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-} */
-
-/* .tracks2{
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-} */
-
-/* .tracks3{
-  display: flex;
-  margin-bottom: 20px;
-} */
-
-/* .tracks2 .box{
-  margin-right: 100px;
-} */
-
-/* .tracks3 .box{
-  margin-right: 100px;
-} */
-
-/* .box{
-  width: 100px;
-  height: 100px;
-  background-color: pink;
-} */
-
-/* footer{
-  display: flex;
-  padding: 40px 0px;
-  background-color: darkgrey;
-  justify-content: space-between;
-} */
-
-/* .ico{
-  width: 200px;
-  height: 40px;
-  background-color: white;
-} */
-
-/* .play{
-  width: 200px;
-  height: 40px;
-  background-color: white;
-} */
-
-/* .setting{
-  width: 200px;
-  height: 40px;
-  background-color: white;
-} */

@@ -90,6 +90,18 @@ a{
 
 .list-navbar li{
   margin-top: 5px;
+  position: relative;
+}
+
+.list-navbar li:hover::after{
+  content: "";
+  display: table;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 2px;
+  height: 100%;
+  background-color: green;
 }
 
 .list-navbar li a{
@@ -117,6 +129,14 @@ a{
   margin-top: 10px;
 }
 
+.playlist li a{
+  opacity: .4;
+}
+
+.playlist li a:hover{
+  opacity: 1;
+}
+
 .navbar h3{
   text-transform: uppercase;
   margin-top: 10px;
@@ -131,6 +151,14 @@ a{
 .account{
   display: flex;
   flex-direction: column;
+}
+
+.account a{
+  opacity: .4;
+}
+
+.account a:hover{
+  opacity: 1;
 }
 
 .account img{
@@ -212,6 +240,11 @@ a{
   background-color: #080b11;
   text-transform: uppercase;
   cursor: pointer;
+  opacity: .4;
+}
+
+.upgrade button:hover{
+  opacity: 1;
 }
 
 /* list menu grid */
@@ -240,6 +273,26 @@ a{
 
 .list-menu ul li{
   padding: 0px 10px;
+  position: relative;
+}
+
+.list-menu ul li a{
+  opacity: .4;
+}
+
+.list-menu li a:hover{
+  opacity: 1;
+}
+
+.list-menu li:hover::after{
+  content: "";
+  display: table;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 2px;
+  background-color: green;
 }
 
 /* list album */

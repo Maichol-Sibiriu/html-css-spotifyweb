@@ -95,6 +95,11 @@ a{
 .list-navbar li a{
   display: flex;
   align-items: center;
+  opacity: .4;
+}
+
+.list-navbar li a:hover{
+  opacity: 1;
 }
 
 .list-navbar a img,
@@ -275,13 +280,9 @@ a{
   background-color: rgba(0,0,0, .7);
   opacity: 0;
   transition: opacity .4s;
-}
-
-.ico-hover i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hover:hover .ico-hover{
